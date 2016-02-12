@@ -1,0 +1,631 @@
+Alexa Skill Info
+
+Interaction Model:
+{
+  "intents": [
+    {
+      "intent": "CheckTransit",
+      "slots": [
+        {
+          "name": "Train",
+          "type": "Trains"
+        }
+      ]
+    }
+  ]
+}
+
+Sample Utterances:
+
+{
+	CheckTransit how's traffic for {Train} trains
+	CheckTransit how's traffic for the {Train} trains
+	CheckTransit how's traffic for the {Train} train
+	CheckTransit how's traffic for the {Train} line
+	CheckTransit how's traffic for the {Train}
+
+	CheckTransit how's traffic on {Train} trains
+	CheckTransit how's traffic on the {Train} trains
+	CheckTransit how's traffic on the {Train} train
+	CheckTransit how's traffic on the {Train} line
+	CheckTransit how's traffic on the {Train}
+
+	CheckTransit how is traffic for {Train} trains
+	CheckTransit how is traffic for the {Train} trains
+	CheckTransit how is traffic for the {Train} train
+	CheckTransit how is traffic for the {Train} line
+	CheckTransit how is traffic for the {Train}
+
+	CheckTransit how is traffic on {Train} trains
+	CheckTransit how is traffic on the {Train} trains
+	CheckTransit how is traffic on the {Train} train
+	CheckTransit how is traffic on the {Train} line
+	CheckTransit how is traffic on the {Train}
+
+	CheckTransit how's service for {Train} trains
+	CheckTransit how's service for the {Train} trains
+	CheckTransit how's service for the {Train} train
+	CheckTransit how's service for the {Train} line
+	CheckTransit how's service for the {Train}
+
+	CheckTransit how's service on {Train} trains
+	CheckTransit how's service on the {Train} trains
+	CheckTransit how's service on the {Train} train
+	CheckTransit how's service on the {Train} line
+	CheckTransit how's service on the {Train}
+
+	CheckTransit how is service for {Train} trains
+	CheckTransit how is service for the {Train} trains
+	CheckTransit how is service for the {Train} train
+	CheckTransit how is service for the {Train} line
+	CheckTransit how is service for the {Train}
+
+	CheckTransit how is service on {Train} trains
+	CheckTransit how is service on the {Train} trains
+	CheckTransit how is service on the {Train} train
+	CheckTransit how is service on the {Train} line
+	CheckTransit how is service on the {Train}
+
+	CheckTransit any traffic for {Train} trains
+	CheckTransit any traffic for the {Train} trains
+	CheckTransit any traffic for the {Train} train
+	CheckTransit any traffic for the {Train} line
+	CheckTransit any traffic for the {Train}
+
+	CheckTransit any traffic on {Train} trains
+	CheckTransit any traffic on the {Train} trains
+	CheckTransit any traffic on the {Train} train
+	CheckTransit any traffic on the {Train} line
+	CheckTransit any traffic on the {Train}
+
+	CheckTransit is there any traffic for {Train} trains
+	CheckTransit is there any traffic for the {Train} trains
+	CheckTransit is there any traffic for the {Train} train
+	CheckTransit is there any traffic for the {Train} line
+	CheckTransit is there any traffic for the {Train}
+
+	CheckTransit is there any traffic on {Train} trains
+	CheckTransit is there any traffic on the {Train} trains
+	CheckTransit is there any traffic on the {Train} train
+	CheckTransit is there any traffic on the {Train} line
+	CheckTransit is there any traffic on the {Train}
+
+	CheckTransit is there traffic for {Train} trains
+	CheckTransit is there traffic for the {Train} trains
+	CheckTransit is there traffic for the {Train} train
+	CheckTransit is there traffic for the {Train} line
+	CheckTransit is there traffic for the {Train}
+
+	CheckTransit is there traffic on {Train} trains
+	CheckTransit is there traffic on the {Train} trains
+	CheckTransit is there traffic on the {Train} train
+	CheckTransit is there traffic on the {Train} line
+	CheckTransit is there traffic on the {Train}
+
+	CheckTransit there is any traffic for {Train} trains
+	CheckTransit there is any traffic for the {Train} trains
+	CheckTransit there is any traffic for the {Train} train
+	CheckTransit there is any traffic for the {Train} line
+	CheckTransit there is any traffic for the {Train}
+
+	CheckTransit there is any traffic on {Train} trains
+	CheckTransit there is any traffic on the {Train} trains
+	CheckTransit there is any traffic on the {Train} train
+	CheckTransit there is any traffic on the {Train} line
+	CheckTransit there is any traffic on the {Train}
+
+	CheckTransit there is traffic for {Train} trains
+	CheckTransit there is traffic for the {Train} trains
+	CheckTransit there is traffic for the {Train} train
+	CheckTransit there is traffic for the {Train} line
+	CheckTransit there is traffic for the {Train}
+
+	CheckTransit there is traffic on {Train} trains
+	CheckTransit there is traffic on the {Train} trains
+	CheckTransit there is traffic on the {Train} train
+	CheckTransit there is traffic on the {Train} line
+	CheckTransit there is traffic on the {Train}
+
+	CheckTransit there are any delays for {Train} trains
+	CheckTransit there are any delays for the {Train} trains
+	CheckTransit there are any delays for the {Train} train
+	CheckTransit there are any delays for the {Train} line
+	CheckTransit there are any delays for the {Train}
+
+	CheckTransit there are any delays on {Train} trains
+	CheckTransit there are any delays on the {Train} trains
+	CheckTransit there are any delays on the {Train} train
+	CheckTransit there are any delays on the {Train} line
+	CheckTransit there are any delays on the {Train}
+
+	CheckTransit there are delays for {Train} trains
+	CheckTransit there are delays for the {Train} trains
+	CheckTransit there are delays for the {Train} train
+	CheckTransit there are delays for the {Train} line
+	CheckTransit there are delays for the {Train}
+
+	CheckTransit there are delays on {Train} trains
+	CheckTransit there are delays on the {Train} trains
+	CheckTransit there are delays on the {Train} train
+	CheckTransit there are delays on the {Train} line
+	CheckTransit there are delays on the {Train}
+
+	CheckTransit are there any delays for {Train} trains
+	CheckTransit are there any delays for the {Train} trains
+	CheckTransit are there any delays for the {Train} train
+	CheckTransit are there any delays for the {Train} line
+	CheckTransit are there any delays for the {Train}
+
+	CheckTransit are there any delays on {Train} trains
+	CheckTransit are there any delays on the {Train} trains
+	CheckTransit are there any delays on the {Train} train
+	CheckTransit are there any delays on the {Train} line
+	CheckTransit are there any delays on the {Train}
+
+	CheckTransit are there delays for {Train} trains
+	CheckTransit are there delays for the {Train} trains
+	CheckTransit are there delays for the {Train} train
+	CheckTransit are there delays for the {Train} line
+	CheckTransit are there delays for the {Train}
+
+	CheckTransit are there delays on {Train} trains
+	CheckTransit are there delays on the {Train} trains
+	CheckTransit are there delays on the {Train} train
+	CheckTransit are there delays on the {Train} line
+	CheckTransit are there delays on the {Train}
+
+	CheckTransit what the delays for {Train} trains are
+	CheckTransit what the delays for the {Train} trains are 
+	CheckTransit what the delays for the {Train} train are 
+	CheckTransit what the delays for the {Train} line are 
+	CheckTransit what the delays for the {Train} are 
+
+	CheckTransit what the delays on {Train} trains are
+	CheckTransit what the delays on the {Train} trains are 
+	CheckTransit what the delays on the {Train} train are 
+	CheckTransit what the delays on the {Train} line are 
+	CheckTransit what the delays on the {Train} are 
+
+	CheckTransit what are the delays for {Train} trains
+	CheckTransit what are the delays for the {Train} trains
+	CheckTransit what are the delays for the {Train} train
+	CheckTransit what are the delays for the {Train} line
+	CheckTransit what are the delays for the {Train}
+
+	CheckTransit what are the delays on {Train} trains
+	CheckTransit what are the delays on the {Train} trains
+	CheckTransit what are the delays on the {Train} train
+	CheckTransit what are the delays on the {Train} line
+	CheckTransit what are the delays on the {Train}
+
+	CheckTransit what delays are there for {Train} trains
+	CheckTransit what delays are there for the {Train} trains
+	CheckTransit what delays are there for the {Train} train
+	CheckTransit what delays are there for the {Train} line
+	CheckTransit what delays are there for the {Train}
+
+	CheckTransit what delays are there on {Train} trains
+	CheckTransit what delays are there on the {Train} trains
+	CheckTransit what delays are there on the {Train} train
+	CheckTransit what delays are there on the {Train} line
+	CheckTransit what delays are there on the {Train}
+
+	CheckTransit what delays there are for {Train} trains
+	CheckTransit what delays there are for the {Train} trains
+	CheckTransit what delays there are for the {Train} train
+	CheckTransit what delays there are for the {Train} line
+	CheckTransit what delays there are for the {Train}
+
+	CheckTransit what delays there are on {Train} trains
+	CheckTransit what delays there are on the {Train} trains
+	CheckTransit what delays there are on the {Train} train
+	CheckTransit what delays there are on the {Train} line
+	CheckTransit what delays there are on the {Train}
+
+	CheckTransit What's up with {Train} trains
+	CheckTransit What's up with the {Train} trains
+	CheckTransit What's up with the {Train} train
+	CheckTransit What's up with the {Train} line
+	CheckTransit What's up with the {Train}
+
+	CheckTransit What's traffic like for {Train} trains
+	CheckTransit What's traffic like for the {Train} trains
+	CheckTransit What's traffic like for the {Train} train
+	CheckTransit What's traffic like for the {Train} line
+	CheckTransit What's traffic like for the {Train}
+
+	CheckTransit What's traffic like on {Train} trains
+	CheckTransit What's traffic like on the {Train} trains
+	CheckTransit What's traffic like on the {Train} train
+	CheckTransit What's traffic like on the {Train} line
+	CheckTransit What's traffic like on the {Train}
+
+	CheckTransit what is traffic like for {Train} trains
+	CheckTransit what is traffic like for the {Train} trains
+	CheckTransit what is traffic like for the {Train} train
+	CheckTransit what is traffic like for the {Train} line
+	CheckTransit what is traffic like for the {Train}
+
+	CheckTransit what is traffic like on {Train} trains
+	CheckTransit what is traffic like on the {Train} trains
+	CheckTransit what is traffic like on the {Train} train
+	CheckTransit what is traffic like on the {Train} line
+	CheckTransit What is traffic like on the {Train}
+
+	CheckTransit get me delays for {Train} trains
+	CheckTransit get me delays for the {Train} trains
+	CheckTransit get me delays for the {Train} train
+	CheckTransit get me delays for the {Train} line
+	CheckTransit get me delays for the {Train}
+
+	CheckTransit get me delays on {Train} trains
+	CheckTransit get me delays on the {Train} trains
+	CheckTransit get me delays on the {Train} train
+	CheckTransit get me delays on the {Train} line
+	CheckTransit get me delays on the {Train}
+
+	CheckTransit get me delays about {Train} trains
+	CheckTransit get me delays about the {Train} trains
+	CheckTransit get me delays about the {Train} train
+	CheckTransit get me delays about the {Train} line
+	CheckTransit get me delays about the {Train}
+
+	CheckTransit get me traffic for {Train} trains
+	CheckTransit get me traffic for the {Train} trains
+	CheckTransit get me traffic for the {Train} train
+	CheckTransit get me traffic for the {Train} line
+	CheckTransit get me traffic for the {Train}
+
+	CheckTransit get me traffic on {Train} trains
+	CheckTransit get me traffic on the {Train} trains
+	CheckTransit get me traffic on the {Train} train
+	CheckTransit get me traffic on the {Train} line
+	CheckTransit get me traffic on the {Train}
+
+	CheckTransit get me traffic about {Train} trains
+	CheckTransit get me traffic about the {Train} trains
+	CheckTransit get me traffic about the {Train} train
+	CheckTransit get me traffic about the {Train} line
+	CheckTransit get me traffic about the {Train}
+
+	CheckTransit get delays for {Train} trains
+	CheckTransit get delays for the {Train} trains
+	CheckTransit get delays for the {Train} train
+	CheckTransit get delays for the {Train} line
+	CheckTransit get delays for the {Train}
+
+	CheckTransit get delays on {Train} trains
+	CheckTransit get delays on the {Train} trains
+	CheckTransit get delays on the {Train} train
+	CheckTransit get delays on the {Train} line
+	CheckTransit get delays on the {Train}
+
+	CheckTransit get delays about {Train} trains
+	CheckTransit get delays about the {Train} trains
+	CheckTransit get delays about the {Train} train
+	CheckTransit get delays about the {Train} line
+	CheckTransit get delays about the {Train}
+
+	CheckTransit get traffic for {Train} trains
+	CheckTransit get traffic for the {Train} trains
+	CheckTransit get traffic for the {Train} train
+	CheckTransit get traffic for the {Train} line
+	CheckTransit get traffic for the {Train}
+
+	CheckTransit get traffic on {Train} trains
+	CheckTransit get traffic on the {Train} trains
+	CheckTransit get traffic on the {Train} train
+	CheckTransit get traffic on the {Train} line
+	CheckTransit get traffic on the {Train}
+
+	CheckTransit get traffic about {Train} trains
+	CheckTransit get traffic about the {Train} trains
+	CheckTransit get traffic about the {Train} train
+	CheckTransit get traffic about the {Train} line
+	CheckTransit get traffic about the {Train}
+
+	CheckTransit tell me delays for {Train} trains
+	CheckTransit tell me delays for the {Train} trains
+	CheckTransit tell me delays for the {Train} train
+	CheckTransit tell me delays for the {Train} line
+	CheckTransit tell me delays for the {Train}
+
+	CheckTransit tell me delays on {Train} trains
+	CheckTransit tell me delays on the {Train} trains
+	CheckTransit tell me delays on the {Train} train
+	CheckTransit tell me delays on the {Train} line
+	CheckTransit tell me delays on the {Train}
+
+	CheckTransit tell me delays about {Train} trains
+	CheckTransit tell me delays about the {Train} trains
+	CheckTransit tell me delays about the {Train} train
+	CheckTransit tell me delays about the {Train} line
+	CheckTransit tell me delays about the {Train}
+
+	CheckTransit tell me traffic for {Train} trains
+	CheckTransit tell me traffic for the {Train} trains
+	CheckTransit tell me traffic for the {Train} train
+	CheckTransit tell me traffic for the {Train} line
+	CheckTransit tell me traffic for the {Train}
+
+	CheckTransit tell me traffic on {Train} trains
+	CheckTransit tell me traffic on the {Train} trains
+	CheckTransit tell me traffic on the {Train} train
+	CheckTransit tell me traffic on the {Train} line
+	CheckTransit tell me traffic on the {Train}
+
+	CheckTransit tell me traffic about {Train} trains
+	CheckTransit tell me traffic about the {Train} trains
+	CheckTransit tell me traffic about the {Train} train
+	CheckTransit tell me traffic about the {Train} line
+	CheckTransit tell me traffic about the {Train}
+
+	CheckTransit read me delays for {Train} trains
+	CheckTransit read me delays for the {Train} trains
+	CheckTransit read me delays for the {Train} train
+	CheckTransit read me delays for the {Train} line
+	CheckTransit read me delays for the {Train}
+
+	CheckTransit read me delays on {Train} trains
+	CheckTransit read me delays on the {Train} trains
+	CheckTransit read me delays on the {Train} train
+	CheckTransit read me delays on the {Train} line
+	CheckTransit read me delays on the {Train}
+
+	CheckTransit read me delays about {Train} trains
+	CheckTransit read me delays about the {Train} trains
+	CheckTransit read me delays about the {Train} train
+	CheckTransit read me delays about the {Train} line
+	CheckTransit read me delays about the {Train}
+
+	CheckTransit read me traffic for {Train} trains
+	CheckTransit read me traffic for the {Train} trains
+	CheckTransit read me traffic for the {Train} train
+	CheckTransit read me traffic for the {Train} line
+	CheckTransit read me traffic for the {Train}
+
+	CheckTransit read me traffic on {Train} trains
+	CheckTransit read me traffic on the {Train} trains
+	CheckTransit read me traffic on the {Train} train
+	CheckTransit read me traffic on the {Train} line
+	CheckTransit read me traffic on the {Train}
+
+	CheckTransit read me traffic about {Train} trains
+	CheckTransit read me traffic about the {Train} trains
+	CheckTransit read me traffic about the {Train} train
+	CheckTransit read me traffic about the {Train} line
+	CheckTransit read me traffic about the {Train}
+
+	CheckTransit read delays for {Train} trains
+	CheckTransit read delays for the {Train} trains
+	CheckTransit read delays for the {Train} train
+	CheckTransit read delays for the {Train} line
+	CheckTransit read delays for the {Train}
+
+	CheckTransit read delays on {Train} trains
+	CheckTransit read delays on the {Train} trains
+	CheckTransit read delays on the {Train} train
+	CheckTransit read delays on the {Train} line
+	CheckTransit read delays on the {Train}
+
+	CheckTransit read delays about {Train} trains
+	CheckTransit read delays about the {Train} trains
+	CheckTransit read delays about the {Train} train
+	CheckTransit read delays about the {Train} line
+	CheckTransit read delays about the {Train}
+
+	CheckTransit read traffic for {Train} trains
+	CheckTransit read traffic for the {Train} trains
+	CheckTransit read traffic for the {Train} train
+	CheckTransit read traffic for the {Train} line
+	CheckTransit read traffic for the {Train}
+
+	CheckTransit read traffic on {Train} trains
+	CheckTransit read traffic on the {Train} trains
+	CheckTransit read traffic on the {Train} train
+	CheckTransit read traffic on the {Train} line
+	CheckTransit read traffic on the {Train}
+
+	CheckTransit read traffic about {Train} trains
+	CheckTransit read traffic about the {Train} trains
+	CheckTransit read traffic about the {Train} train
+	CheckTransit read traffic about the {Train} line
+	CheckTransit read traffic about the {Train}
+
+	CheckTransit report delays for {Train} trains
+	CheckTransit report delays for the {Train} trains
+	CheckTransit report delays for the {Train} train
+	CheckTransit report delays for the {Train} line
+	CheckTransit report delays for the {Train}
+
+	CheckTransit report delays on {Train} trains
+	CheckTransit report delays on the {Train} trains
+	CheckTransit report delays on the {Train} train
+	CheckTransit report delays on the {Train} line
+	CheckTransit report delays on the {Train}
+
+	CheckTransit report delays about {Train} trains
+	CheckTransit report delays about the {Train} trains
+	CheckTransit report delays about the {Train} train
+	CheckTransit report delays about the {Train} line
+	CheckTransit report delays about the {Train}
+
+	CheckTransit report traffic for {Train} trains
+	CheckTransit report traffic for the {Train} trains
+	CheckTransit report traffic for the {Train} train
+	CheckTransit report traffic for the {Train} line
+	CheckTransit report traffic for the {Train}
+
+	CheckTransit report traffic on {Train} trains
+	CheckTransit report traffic on the {Train} trains
+	CheckTransit report traffic on the {Train} train
+	CheckTransit report traffic on the {Train} line
+	CheckTransit report traffic on the {Train}
+
+	CheckTransit report traffic about {Train} trains
+	CheckTransit report traffic about the {Train} trains
+	CheckTransit report traffic about the {Train} train
+	CheckTransit report traffic about the {Train} line
+	CheckTransit report traffic about the {Train}
+
+	CheckTransit check traffic for {Train} trains
+	CheckTransit check traffic for the {Train} trains
+	CheckTransit check traffic for the {Train} train
+	CheckTransit check traffic for the {Train} line
+	CheckTransit check traffic for the {Train}
+
+	CheckTransit check traffic on {Train} trains
+	CheckTransit check traffic on the {Train} trains
+	CheckTransit check traffic on the {Train} train
+	CheckTransit check traffic on the {Train} line
+	CheckTransit check traffic on the {Train}
+
+	CheckTransit the traffic for {Train} trains
+	CheckTransit the traffic for the {Train} trains
+	CheckTransit the traffic for the {Train} train
+	CheckTransit the traffic for the {Train} line
+	CheckTransit the traffic for the {Train}
+
+	CheckTransit the traffic on {Train} trains
+	CheckTransit the traffic on the {Train} trains
+	CheckTransit the traffic on the {Train} train
+	CheckTransit the traffic on the {Train} line
+	CheckTransit the traffic on the {Train}
+
+	CheckTransit traffic for {Train} trains
+	CheckTransit traffic for the {Train} trains
+	CheckTransit traffic for the {Train} train
+	CheckTransit traffic for the {Train} line
+	CheckTransit traffic for the {Train}
+
+	CheckTransit traffic on {Train} trains
+	CheckTransit traffic on the {Train} trains
+	CheckTransit traffic on the {Train} train
+	CheckTransit traffic on the {Train} line
+	CheckTransit traffic on the {Train}
+
+	CheckTransit traffic about {Train} trains
+	CheckTransit traffic about the {Train} trains
+	CheckTransit traffic about the {Train} train
+	CheckTransit traffic about the {Train} line
+	CheckTransit traffic about the {Train}
+
+	CheckTransit any delays for {Train} trains
+	CheckTransit any delays for the {Train} trains
+	CheckTransit any delays for the {Train} train
+	CheckTransit any delays for the {Train} line
+	CheckTransit any delays for the {Train}
+
+	CheckTransit any delays on {Train} trains
+	CheckTransit any delays on the {Train} trains
+	CheckTransit any delays on the {Train} train
+	CheckTransit any delays on the {Train} line
+	CheckTransit any delays on the {Train}
+
+	CheckTransit delays for {Train} trains
+	CheckTransit delays for the {Train} trains
+	CheckTransit delays for the {Train} train 
+	CheckTransit delays for the {Train} line 
+	CheckTransit delays for the {Train}
+
+	CheckTransit delays on {Train} trains 
+	CheckTransit delays on the {Train} train 
+	CheckTransit delays on the {Train} train 
+	CheckTransit delays on the {Train} line 
+	CheckTransit delays on the {Train}
+
+	CheckTransit a traffic report for {Train} trains
+	CheckTransit a traffic report for the {Train} trains
+	CheckTransit a traffic report for the {Train} train
+	CheckTransit a traffic report for the {Train} line
+	CheckTransit a traffic report for the {Train}
+
+	CheckTransit a traffic report for {Train} trains
+	CheckTransit a traffic report for the {Train} trains
+	CheckTransit a traffic report on the {Train} train
+	CheckTransit a traffic report on the {Train} line
+	CheckTransit a traffic report on the {Train}
+
+	CheckTransit traffic report {Train} trains
+	CheckTransit traffic report {Train} train
+	CheckTransit traffic report {Train} line
+	CheckTransit traffic report {Train}
+
+	CheckTransit the {Train} trains delays
+	CheckTransit the {Train} train delays
+	CheckTransit the {Train} line delays
+	CheckTransit the {Train} delays
+
+	CheckTransit the {Train} trains delay
+	CheckTransit the {Train} train delay
+	CheckTransit the {Train} line delay
+	CheckTransit the {Train} delay
+
+	CheckTransit {Train} trains delays
+	CheckTransit {Train} train delays
+	CheckTransit {Train} line delays
+	CheckTransit {Train} delays
+
+	CheckTransit {Train} trains delay
+	CheckTransit {Train} train delay
+	CheckTransit {Train} line delay
+	CheckTransit {Train} delay
+
+	CheckTransit the {Train} trains traffic report
+	CheckTransit the {Train} train traffic report
+	CheckTransit the {Train} line traffic report
+	CheckTransit the {Train} traffic report
+
+	CheckTransit {Train} trains traffic report
+	CheckTransit {Train} train traffic report
+	CheckTransit {Train} line traffic report
+	CheckTransit {Train} traffic report
+
+	CheckTransit the {Train} trains report
+	CheckTransit the {Train} train report
+	CheckTransit the {Train} line report
+	CheckTransit the {Train} report
+
+	CheckTransit the {Train} trains traffic
+	CheckTransit the {Train} train traffic
+	CheckTransit the {Train} line traffic
+	CheckTransit the {Train} traffic
+
+	CheckTransit {Train} trains report
+	CheckTransit {Train} train report
+	CheckTransit {Train} line report
+	CheckTransit {Train} report
+
+	CheckTransit {Train} trains traffic
+	CheckTransit {Train} train traffic
+	CheckTransit {Train} line traffic
+	CheckTransit {Train} traffic
+
+	CheckTransit the {Train} trains
+	CheckTransit the {Train} train
+	CheckTransit the {Train} line
+	CheckTransit the {Train}
+
+	CheckTransit {Train} trains
+	CheckTransit {Train} train
+	CheckTransit {Train} line
+	CheckTransit {Train}
+
+
+}
+
+Description: 
+{
+	Short Skill Description: Get real time info on New York City Transit delays.
+
+	Full Skill Description: Before heading to work, use this skill set to see if there are any delays on your local New York City subway.
+
+	Example Phrases: 
+	1. Alexa, ask New York Transit if there are any delays for the 7 line
+	2. Alexa, ask New York Transit How's traffic on the R train
+	3. Alexa, ask New York Transit for a Traffic report 
+
+	Keywords: transit, traffic, subway, new, york, city, delays
+
+	
+}
