@@ -228,6 +228,12 @@ Sample Utterances:
 	CheckTransit What's up with the {Train} line
 	CheckTransit What's up with the {Train}
 
+	CheckTransit What is up with {Train} trains
+	CheckTransit What is up with the {Train} trains
+	CheckTransit What is up with the {Train} train
+	CheckTransit What is up with the {Train} line
+	CheckTransit What is up with the {Train}
+
 	CheckTransit What's traffic like for {Train} trains
 	CheckTransit What's traffic like for the {Train} trains
 	CheckTransit What's traffic like for the {Train} train

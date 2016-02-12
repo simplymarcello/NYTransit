@@ -93,18 +93,18 @@ def get_welcome_response():
     """
 
     session_attributes = {}
-    card_title = "Welcome"
+    card_title = "Welcome to the NYTransit app"
     speech_output = "Welcome, to New York Transit. " \
-                    "To request real time traffic data just say, Any delays on the 7 line? " \
-                    "Or just say, 7 train."
+                    "To request real time Transit information say something like," \
+                    " \"Any delays on the 7 line?\" " \
+                    "Or for more examples say, Help."
 
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
-    reprompt_text = "To request real time traffic updates just say, " \
-                    "How's traffic for the R train? or," \
-                    "Any delays on the 7 line? or,"\
-                    "Traffic report, E train. or simply," \
-                    "E Train."
+    reprompt_text = "To request real time Transit information just say, " \
+                    " \"How's traffic for the R train?\" or," \
+                    " \"Any delays on the 7 line?\","\
+                    "Or for more examples say, Help."
 
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(
@@ -142,21 +142,21 @@ def get_traffic_update(intent, session):
                 speech_output = pull_traffic_data('JZ')
             elif train in {'L','L.','l','l.'}:
                 speech_output = pull_traffic_data('L')
-            elif train in {'N','Q','R','N.','Q.','R.','n','q','r','n.','q.','r.'}:
+            elif train in {'N','Q','R','N.','Q.','R.','n','q','r','n.','q.','r.','are'}:
                 speech_output = pull_traffic_data('NQR')
             elif train in {'S','S.','s','s.'}:
                 speech_output = pull_traffic_data('S')
             else:
-                speech_output = "I'm not sure which train your asking for. " \
-                "Please try again."
+                speech_output = "I'm sorry, I'm not sure which train you are asking for. " \
+                "Please try again, or say help for sample phrases."
                 should_end_session = False
         else:
-            speech_output = "I'm not sure which train your asking for. " \
-                "Please try again."
+            speech_output = "I'm sorry, I'm not sure which train you are asking for. " \
+            "Please try again, or say help for sample phrases."
             should_end_session = False
     else:
-        speech_output = "I'm not sure which train your asking for. " \
-                "Please try again."
+        speech_output = "I'm sorry, I'm not sure which train you are asking for. " \
+        "Please try again, or say help for sample phrases."
         should_end_session = False
 
     reprompt_text = "To request real time traffic updates just say, " \
@@ -183,8 +183,8 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         },
         'card': {
             'type': 'Simple',
-            'title': 'SessionSpeechlet - ' + title,
-            'content': 'SessionSpeechlet - ' + output
+            'title': title,
+            'content': output
         },
         'reprompt': {
             'outputSpeech': {
